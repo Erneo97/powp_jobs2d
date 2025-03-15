@@ -49,6 +49,10 @@ public class TestJobs2dPatterns {
 		Job2dDriver specialLine = new LineDrawerAdapter(DrawerFeature.getDrawerController(), LineFactory.getSpecialLine());
 		DriverFeature.addDriver("Special Line Simulator", specialLine);
 
+		Job2dDriver dotteslLine = new LineDrawerAdapter(DrawerFeature.getDrawerController(), LineFactory.getDottedLine());
+		DriverFeature.addDriver("Dotted Line Simulator", dotteslLine);
+
+
 
 		DriverFeature.updateDriverInfo();
 	}
