@@ -34,6 +34,6 @@ public class Jobs2dMagicToDrawerAdapter implements Job2dDriver {
 
 	@Override
 	public String toString() {
-		return "Buggy Symulator" ;
+		return "Working Symulator" ;
 	}
 }
