@@ -6,16 +6,16 @@ public class RectangleCommandFactory implements CommandFactory {
         ComplexCommand commands = new ComplexCommand(0,0 );
 
         commands.addComand(new OperateToCommand(0, 10));
-        commands.addComand(new OperateToCommand(0, 10));
+        commands.addComand(new SetPositionCommand(0, 10));
 
         commands.addComand(new OperateToCommand(10, 10));
-        commands.addComand(new OperateToCommand(10, 10));
+        commands.addComand(new SetPositionCommand(10, 10));
 
         commands.addComand(new OperateToCommand(10, 0));
-        commands.addComand(new OperateToCommand(10, 0));
+        commands.addComand(new SetPositionCommand(10, 0));
 
         commands.addComand(new OperateToCommand(0, 0));
-        commands.addComand(new OperateToCommand(0, 0));
+        commands.addComand(new SetPositionCommand(0, 0));
 
         return commands;
     }
