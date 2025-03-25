@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import edu.kis.powp.jobs2d.drivers.DriverManager;
 import edu.kis.powp.jobs2d.magicpresets.FiguresJoe;
+import edu.kis.powp.legacy.drawer.TestDrawer;
 
 public class SelectTestFigureOptionListener implements ActionListener {
 
@@ -22,6 +23,12 @@ public class SelectTestFigureOptionListener implements ActionListener {
 				break;
 			case "Figure Joe 2":
 				FiguresJoe.figureScript2(driverManager.getCurrentDriver());
+				break;
+			case "Factored triangle draw":
+				TestDrawer.factoredDraw(driverManager.getCurrentDriver(), TestDrawer.TypeFactoredOfTest.TRIANGLE);
+				break;
+			case "Factored rectangle draw":
+				TestDrawer.factoredDraw(driverManager.getCurrentDriver(), TestDrawer.TypeFactoredOfTest.RECTANGLE);
 				break;
 		}
 

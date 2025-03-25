@@ -8,7 +8,7 @@ public class ComplexCommand extends AbstractDriverCommand{
 
     public ComplexCommand(int x, int y) {
         super(x, y);
-        this.addComand(new ComplexCommand(x, y));
+        this.addComand(new SetPositionCommand(x, y));
     }
 
     public void addComand(AbstractDriverCommand cmd) {
